@@ -1,3 +1,5 @@
+from encode import *
+from decode import *
 def main():
     program = True
     while program:
@@ -11,20 +13,6 @@ def main():
             print("The encoded password is", encode(password), "and the original password is", decode(encoded), end='.\n\n')
         if option == "3":
             program = False
-
-
-def encode(password):
-    encoded = ''
-    for char in password:
-        encoded += (str(int(char) + 3))  # adds 3 to each number in the password
-    return encoded
-
-
-def decode(encoded):
-    decoded = ''
-    for char in encoded:
-        decoded += (str(int(char) - 3))  # subtracts 3 to each number in the password
-    return decoded
 
 
 if __name__ == "__main__":
