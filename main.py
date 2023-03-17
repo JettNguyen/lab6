@@ -1,5 +1,7 @@
-from encode import *
-from decode import *
+from encode import encode
+from decode import decode
+
+
 def main():
     program = True
     while program:
