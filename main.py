@@ -5,7 +5,7 @@ from decode import decode
 def main():
     program = True
     while program:
-        print("Menu\n-------------\n1. Encode\n2. Decode\n3. Quit\n")  # main menu print
+        print("Menu\n-------------\n1. Encode\n2. Decode\n3. Quit\n")  # main menu prints
         option = input("Please enter an option: ")  # takes the input of the user to determine what to execute
         if option == "1":
             password = input("Please enter your password to encode: ")
