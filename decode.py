@@ -1,5 +1,5 @@
 def decode(encoded):
-    decoded = ''
+    password_decoded = ''
     for char in encoded:
-        decoded += (str(int(char) - 3))  # subtracts 3 to each number in the password
-    return decoded
+        password_decoded += (str(int(char) - 3))  # subtracts 3 to each number in the password
+    return password_decoded
